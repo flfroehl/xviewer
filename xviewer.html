@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Erster Test</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="scripts.js">
-zip.workerScriptsPath = "/lib/";
-</script>
+	<head>
+		<title>Erster Test</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-<form action="input_file.htm" method="post">
-<p>XML</p>
-	<input type='file' id="xmlfilePath" accept="text/*" />
-</form>
+	<body>
+		<div class="container">
+			<h1>Xmind Viewer v0.1</h1>
+			<ol id="demo-container">
+				<li>
+					<label> <span class="form-label">W&auml;hle eine xmind Datei aus</span>
+						<input type="file" accept="application/vnd" id="file-input">
+					</label>
+				</li>
+				<li>
+					<label> <span class="form-label">W&auml;hle den Tempor&auml;ren Speicher</span>
+						<select id="creation-method-input">
+							<option value="Blob">RAM</option>
+							<option value="File">HDD</option>
+						</select> </label>
+				</li>
+				<li>
+					<span class="form-label">Speicher die content.xml</span>
+					<ul id="file-list"></ul>
+				</li>
+				<li>
+					<label>&Ouml;ffne das content.xml file</label> 
+					<input type="file" accept="application/xml" id="xmlContentFilePath">
+					<output id="fileresults"></output>
+				</li>				
+				
+			</ol>
 
-<body>
-<h1> Xmind Viewer v0.1</
+		</div>
+		<div class="container">
+		<h1 id="result"> Ergebnis </h1>	
+		</div>
+	</body>
+	<script type="text/javascript" src="js/zip.js"></script>
+	<!--
+	<script type="text/javascript" src="js/deflate.js"></script>
+	<script type="text/javascript" src="js/inflate.js"></script>
+	-->
+	<script type="text/javascript" src="js/zipscript.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 
-
-</body>
-  </html>
+</html>
