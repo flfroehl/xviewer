@@ -1,0 +1,62 @@
+body , form, button, textarea{ 
+	background: grey;
+	font-family: TrajanPro-Regular, 'Lucida Grande', Sans-serif;
+	color: darkorange;	
+}
+
+
+#fileEditor {
+	min-height:300px; 
+	min-width:400px;
+}
+#logEditor {
+	min-heigth:100px;
+	min-width:200px;
+}
+
+
+div { 
+	padding 10px;
+	float:left;
+	background: #777777;
+	border: 20px solid #AAAAAA
+
+}
+textarea { 
+	float:left;
+	left:0;
+	width:100%;
+	height:285px;
+}
+
+li {
+	color:white;
+	font-size: 0.875em;
+}
+
+textarea, button, input{
+	border: 1px solid white;
+	border-radius:5px;
+	background: #222222;
+	box-shadow: inset 0 0 3px white;
+}
+
+/* Upload Button ausblenden */
+#fileChooser::-webkit-file-upload-button {
+	border:0px solid white;
+	border-right: 1px solid white;
+	border-radius: 5px 0px 0px 5px;
+	color: #222222;
+	background:darkorange;
+}
+
+button:hover {
+	color: #222222;
+	background:darkorange;
+	cursor: pointer;
+}
+#fileChooser::-webkit-file-upload-button:hover{
+	background:#222222;
+	color:darkorange;
+	cursor: pointer;
+}
